@@ -1,0 +1,65 @@
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding-top: 20px;
+  position: fixed;
+  height: 100%;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  background-color: #34495e;
+}
+
+.sidebar ul li a img {
+  width: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Contenido principal */
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  flex: 1;
+}
+
+.content h1 {
+  color: #2c3e50;
+}
+
+
+.sidebar ul li a i {
+  margin-right: 10px;
+}
+
+.sidebar { background-color: #2c3e50; } ← menú azul oscuro
+.content { margin-left: 250px; }        ← espacio para el contenido
