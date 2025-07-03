@@ -11,11 +11,12 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-   "dependencies": {
+  "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "mysql2": "^3.14.1",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "electron": "^37.2.0"

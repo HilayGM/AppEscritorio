@@ -1,4 +1,6 @@
-/* Estilos globales */
+/* ====================
+   Estilos Globales
+==================== */
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +9,17 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #f2f4f8;
   display: flex;
   height: 100vh;
 }
 
+/* ====================
+   Barra lateral (Sidebar)
+==================== */
 .sidebar {
   width: 250px;
-  background-color: #2c3e50;
+  background-color: #2c3e50; /* Menú azul oscuro */
   color: white;
   padding-top: 20px;
   position: fixed;
@@ -39,27 +45,92 @@ body {
   background-color: #34495e;
 }
 
+.sidebar ul li a i,
 .sidebar ul li a img {
-  width: 24px;
   margin-right: 10px;
   vertical-align: middle;
+  width: 20px;
 }
 
-/* Contenido principal */
+/* ====================
+   Contenido principal
+==================== */
 .content {
-  margin-left: 250px;
+  margin-left: 250px; /* Espacio reservado para sidebar */
   padding: 20px;
   flex: 1;
 }
 
-.content h1 {
+#contenidoPrincipal {
+  padding: 20px;
+}
+
+
+ h1 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+
+
+ h2 {
   color: #2c3e50;
+  margin-bottom: 15px;
 }
 
-
-.sidebar ul li a i {
-  margin-right: 10px;
+/* ====================
+   Tarjetas de datos
+==================== */
+.lista-tarjetas {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 }
 
-.sidebar { background-color: #2c3e50; } ← menú azul oscuro
-.content { margin-left: 250px; }        ← espacio para el contenido
+.tarjeta {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-3px);
+}
+
+.tarjeta p {
+  margin: 4px 0;
+  color: #555;
+}
+
+/* ====================
+   Formularios y botones
+==================== */
+form {
+  max-width: 400px;
+  margin-top: 15px;
+}
+
+input {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
